@@ -101,6 +101,13 @@ function categoryName(id) {
   return state.categories.find((c) => c.id === id)?.name || id;
 }
 
+function levelBadgeClass(level) {
+  if (level === "Entry Level") return "badge--entry";
+  if (level === "Mid Level") return "badge--mid";
+  if (level === "Senior Level") return "badge--senior";
+  return "";
+}
+
 function render() {
   const filtered = getFiltered();
   els.results.innerHTML = "";
@@ -113,7 +120,7 @@ function render() {
     card.innerHTML = `
       <div class="role-card-top">
         <h3 class="role-title">${escapeHtml(role.title)}</h3>
-        <span class="badge">${escapeHtml(role.level)}</span>
+        <span class="badge ${levelBadgeClass(role.level)}">${escapeHtml(role.level)}</span>
       </div>
       <span class="role-category">${escapeHtml(categoryName(role.category))}</span>
       <p class="role-desc">${escapeHtml(role.description)}</p>
