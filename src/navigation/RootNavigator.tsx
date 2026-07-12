@@ -11,6 +11,7 @@ import { CompareScreen } from '../screens/careers/CompareScreen';
 import { CertificationDetailScreen } from '../screens/certifications/CertificationDetailScreen';
 import { LearnScreen } from '../screens/certifications/LearnScreen';
 import { ComingSoonScreen } from '../screens/PlaceholderScreen';
+import { NewsScreen } from '../screens/news/NewsScreen';
 import { EditProfileScreen } from '../screens/profile/EditProfileScreen';
 import { ProfileScreen } from '../screens/profile/ProfileScreen';
 import { ProgressScreen } from '../screens/progress/ProgressScreen';
@@ -90,6 +91,7 @@ function AppNavigator() {
       <RootStack.Screen name="CertificationDetail" component={CertificationDetailScreen} />
       <RootStack.Screen name="RoadmapDetail" component={RoadmapDetailScreen} />
       <RootStack.Screen name="EditProfile" component={EditProfileScreen} options={{ presentation: 'modal' }} />
+      <RootStack.Screen name="News" component={NewsScreen} />
       <RootStack.Screen name="ComingSoon" component={ComingSoonScreen} />
     </RootStack.Navigator>
   );

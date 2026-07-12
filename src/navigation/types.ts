@@ -23,5 +23,6 @@ export type RootStackParamList = {
   CertificationDetail: { certificationId: string };
   RoadmapDetail: { roadmapId: string };
   EditProfile: undefined;
+  News: undefined;
   ComingSoon: { title: string; description: string; icon: string };
 };

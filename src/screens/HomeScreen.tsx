@@ -15,9 +15,9 @@ import { DailyGoal } from '../components/home/DailyGoal';
 import { TechNews } from '../components/home/TechNews';
 import { SectionHeader } from '../components/SectionHeader';
 import { useAppData } from '../context/AppDataContext';
+import { useNews } from '../context/NewsContext';
 import { useAppNavigation } from '../navigation/useAppNavigation';
 import { useTheme } from '../theme/ThemeProvider';
-import { techNews } from '../data/news';
 import { Career, Certification } from '../types';
 
 const DAILY_GOAL_MINUTES = 30;
@@ -40,6 +40,7 @@ export function HomeScreen() {
     setCertProgressValue,
     logStudy,
   } = useAppData();
+  const { news } = useNews();
 
   const featuredCareers = useMemo(() => careers.slice(0, 6), [careers]);
 
@@ -203,8 +204,12 @@ export function HomeScreen() {
         </View>
 
         <View>
-          <SectionHeader title="Tech News" />
-          <TechNews items={techNews} />
+          <SectionHeader
+            title="Tech News"
+            actionLabel="See all"
+            onPressAction={() => navigation.navigate('News')}
+          />
+          <TechNews items={news.slice(0, 8)} />
         </View>
       </ScrollView>
     </SafeAreaView>

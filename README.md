@@ -34,10 +34,16 @@ Then press `i` for iOS, `a` for Android, or `w` for web.
   log, the in-session compare list).
 - `src/quiz/scoring.ts` – cosine-similarity matching between a user's quiz
   answers and each career's trait vector.
+- `src/services/hackerNewsService.ts` + `src/context/NewsContext.tsx` – live
+  IT/tech industry news from the free, keyless Hacker News API. Fetches on
+  launch if the cached copy is more than 15 minutes old, auto-refreshes every
+  15 minutes while the app is open, and supports pull-to-refresh; falls back
+  to a small offline sample (with a visible "offline" indicator) if the
+  network is unavailable.
 - `src/navigation` – an auth stack (sign in/up/forgot password) vs. an app
   stack (bottom tabs — Home, Explore, Learn, Progress, Profile — plus pushed
-  detail screens for career/certification/roadmap detail, compare, quiz, and
-  edit profile).
+  detail screens for career/certification/roadmap detail, compare, quiz,
+  news, and edit profile).
 - `src/screens`, `src/components` – screens grouped by feature
   (careers, certifications, roadmaps, quiz, profile, auth), shared UI
   primitives at the top level of `src/components`.
@@ -48,7 +54,8 @@ Working end-to-end: sign up/in, career search & filters, favorites, career
 comparison with PDF export, the career quiz and its results, certification
 bookmarking/progress/exam-date tracking, roadmap step completion with
 sequential unlocking, the progress dashboard (streak, weekly chart,
-achievements), and profile editing (incl. photo picker).
+achievements), profile editing (incl. photo picker), and a live-updating IT
+news feed.
 
 Deferred (need external accounts/services this environment doesn't have):
 real Firebase/Firestore, Apple Sign-In, a live jobs board API, an AI career

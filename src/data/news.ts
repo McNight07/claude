@@ -1,11 +1,18 @@
+export type NewsCategory = 'AI' | 'Cybersecurity' | 'Cloud' | 'Networking' | 'Programming' | 'Business' | 'Other';
+
 export interface NewsItem {
   id: string;
-  category: 'AI' | 'Cybersecurity' | 'Cloud' | 'Networking' | 'Programming';
+  category: NewsCategory;
   title: string;
   source: string;
   timeAgo: string;
+  url?: string;
+  points?: number;
+  commentsCount?: number;
+  publishedAt?: string;
 }
 
+/** Offline fallback shown only if the live feed has never loaded successfully. */
 export const techNews: NewsItem[] = [
   { id: 'n1', category: 'AI', title: 'AI agents are reshaping how teams ship software', source: 'TechDaily', timeAgo: '2h ago' },
   { id: 'n2', category: 'Cybersecurity', title: 'New phishing techniques target remote workers', source: 'SecWatch', timeAgo: '4h ago' },
