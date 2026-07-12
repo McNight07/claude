@@ -62,3 +62,34 @@ real Firebase/Firestore, Apple Sign-In, a live jobs board API, an AI career
 advisor, push notifications, and the admin dashboard. The Resume Builder
 quick action links to a labeled "coming soon" screen rather than a stub that
 pretends to work.
+
+## Publishing to the App Store / Play Store
+
+This is an Expo project, so builds go through [EAS Build](https://docs.expo.dev/build/introduction/),
+not Flutter's `flutter build appbundle`/`flutter build ipa`.
+
+**Already done in this repo:**
+- Unique bundle identifiers (`com.techcareerexplorer.app` for both platforms) and
+  version/build numbers in `app.json`
+- A real app icon, Android adaptive icon (foreground/background/monochrome),
+  and splash screen (`assets/*.png`, wired up via the `expo-splash-screen`
+  plugin) instead of Expo's blank template graphics
+- `eas.json` with development/preview/production build profiles
+- Draft `PRIVACY_POLICY.md` and `TERMS_OF_SERVICE.md` — **read the placeholder
+  markers in each file; they need your name/email and a legal read before use**
+
+**Steps that only you can do** (they need your identity, a payment method, and
+interactive web consoles I don't have access to):
+1. Enroll in the [Apple Developer Program](https://developer.apple.com/programs/) ($99/yr) and create a
+   [Google Play Console](https://play.google.com/console/) account ($25 one-time)
+2. Host `PRIVACY_POLICY.md` (filled in) at a public URL — both stores require this
+3. Run `npx eas-cli build --platform android` / `--platform ios` (after `npx eas-cli login`
+   and `eas build:configure`) to produce the `.aab`/`.ipa`
+4. Take real screenshots on a device or simulator, write the store listing copy,
+   and submit through App Store Connect / Play Console
+
+**Before submitting, note these gaps vs. a typical launch checklist:**
+push notifications, an AI career advisor, and payments are not implemented —
+don't promise them in store copy. Resume Builder is a labeled "coming soon"
+placeholder, not a working feature. Firebase/analytics/crash reporting aren't
+wired up (this build's data layer is local-only, per the section above).
