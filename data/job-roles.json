@@ -1,0 +1,1455 @@
+{
+  "categories": [
+    {
+      "id": "all",
+      "name": "All Categories"
+    },
+    {
+      "id": "cybersecurity",
+      "name": "Cybersecurity"
+    },
+    {
+      "id": "networking",
+      "name": "Networking"
+    },
+    {
+      "id": "cloud",
+      "name": "Cloud"
+    },
+    {
+      "id": "data-ai",
+      "name": "Data & AI"
+    },
+    {
+      "id": "tech-support",
+      "name": "Technical Support"
+    },
+    {
+      "id": "software-dev",
+      "name": "Software Development"
+    },
+    {
+      "id": "project-management",
+      "name": "Project Management"
+    }
+  ],
+  "majorDetails": {
+    "cybersecurity": {
+      "duration": "18 months",
+      "semestersPerYear": 2,
+      "courses": [
+        "Security Fundamentals",
+        "Threat Detection & Incident Response",
+        "Penetration Testing & Ethical Hacking",
+        "Governance, Risk & Compliance",
+        "Advanced Security Architecture"
+      ],
+      "certifications": [
+        "CompTIA Security+",
+        "CompTIA CySA+",
+        "CompTIA PenTest+",
+        "CompTIA CASP+"
+      ],
+      "semesterCosts": [
+        2400,
+        2600,
+        2300
+      ]
+    },
+    "networking": {
+      "duration": "12 months",
+      "semestersPerYear": 2,
+      "courses": [
+        "Networking Fundamentals",
+        "Routing & Switching",
+        "Wireless Network Design",
+        "Server Administration",
+        "Network Security Basics"
+      ],
+      "certifications": [
+        "CompTIA Network+",
+        "CompTIA Server+",
+        "CompTIA Security+"
+      ],
+      "semesterCosts": [
+        2100,
+        2300
+      ]
+    },
+    "cloud": {
+      "duration": "12 months",
+      "semestersPerYear": 2,
+      "courses": [
+        "Cloud Infrastructure Fundamentals",
+        "Virtualization & Containers",
+        "Cloud Deployment & Automation",
+        "Cloud Security & Compliance"
+      ],
+      "certifications": [
+        "CompTIA Cloud+",
+        "CompTIA Linux+"
+      ],
+      "semesterCosts": [
+        2200,
+        2350
+      ]
+    },
+    "data-ai": {
+      "duration": "12 months",
+      "semestersPerYear": 2,
+      "courses": [
+        "Data Analysis Fundamentals",
+        "Statistics for Data Science",
+        "Databases & SQL",
+        "Data Visualization & Reporting",
+        "Machine Learning Foundations"
+      ],
+      "certifications": [
+        "CompTIA Data+"
+      ],
+      "semesterCosts": [
+        2150,
+        2250
+      ]
+    },
+    "tech-support": {
+      "duration": "6 months",
+      "semestersPerYear": 2,
+      "courses": [
+        "IT Fundamentals",
+        "PC & Mobile Device Hardware",
+        "Operating Systems Support",
+        "Troubleshooting Methodology",
+        "Customer Service for IT Support"
+      ],
+      "certifications": [
+        "CompTIA ITF+",
+        "CompTIA A+"
+      ],
+      "semesterCosts": [
+        1850,
+        1750
+      ]
+    },
+    "software-dev": {
+      "duration": "12 months",
+      "semestersPerYear": 2,
+      "courses": [
+        "Programming Fundamentals",
+        "Web Development Basics",
+        "Software Testing & QA",
+        "Version Control & Collaboration",
+        "API Design & Integration"
+      ],
+      "certifications": [
+        "CompTIA ITF+",
+        "CompTIA Security+"
+      ],
+      "semesterCosts": [
+        2000,
+        2100
+      ]
+    },
+    "project-management": {
+      "duration": "9 months",
+      "semestersPerYear": 2,
+      "courses": [
+        "Project Management Fundamentals",
+        "Agile & Scrum Practices",
+        "Business Analysis Essentials",
+        "Risk & Budget Management"
+      ],
+      "certifications": [
+        "CompTIA Project+"
+      ],
+      "semesterCosts": [
+        1900,
+        1800
+      ]
+    }
+  },
+  "roles": [
+    {
+      "title": "Help Desk Technician",
+      "category": "tech-support",
+      "level": "Entry Level",
+      "description": "First point of contact for troubleshooting hardware, software, and connectivity issues for end users, often by phone, chat, or ticketing system.",
+      "salaryRange": "$38K - $52K",
+      "growthOutlook": "Faster than average",
+      "certifications": [
+        "CompTIA A+",
+        "CompTIA ITF+"
+      ],
+      "skills": [
+        "Troubleshooting",
+        "Customer Service",
+        "Ticketing Systems",
+        "Windows/macOS Support"
+      ],
+      "dayInLife": [
+        {
+          "time": "8:30 AM",
+          "icon": "headset",
+          "title": "Ticket Queue Triage",
+          "text": "Reviews the overnight ticket queue and prioritizes issues by urgency before the first calls come in."
+        },
+        {
+          "time": "11:00 AM",
+          "icon": "ticket",
+          "title": "Live Troubleshooting",
+          "text": "Walks users through password resets, printer errors, and software installs over phone and chat."
+        },
+        {
+          "time": "2:30 PM",
+          "icon": "report",
+          "title": "Documentation & Escalation",
+          "text": "Logs resolutions in the ticketing system and escalates unresolved hardware issues to tier 2."
+        }
+      ]
+    },
+    {
+      "title": "Technical Support Specialist",
+      "category": "tech-support",
+      "level": "Entry Level",
+      "description": "Provides advanced remote and in-person support for hardware, software, and network issues, escalating complex problems as needed.",
+      "salaryRange": "$42K - $58K",
+      "growthOutlook": "Faster than average",
+      "certifications": [
+        "CompTIA A+",
+        "CompTIA Network+"
+      ],
+      "skills": [
+        "Remote Support",
+        "Diagnostics",
+        "Documentation",
+        "Escalation Management"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:00 AM",
+          "icon": "headset",
+          "title": "Remote Session Support",
+          "text": "Connects remotely to diagnose software conflicts and configuration issues on user devices."
+        },
+        {
+          "time": "12:00 PM",
+          "icon": "wrench",
+          "title": "Advanced Diagnostics",
+          "text": "Digs into recurring hardware faults, running diagnostic tools to isolate root causes."
+        },
+        {
+          "time": "3:30 PM",
+          "icon": "report",
+          "title": "Escalation Handoff",
+          "text": "Packages detailed notes for engineers when a fix requires deeper system access."
+        }
+      ]
+    },
+    {
+      "title": "Desktop Support Analyst",
+      "category": "tech-support",
+      "level": "Entry Level",
+      "description": "Maintains and repairs desktop computers, peripherals, and mobile devices for an organization's workforce.",
+      "salaryRange": "$44K - $60K",
+      "growthOutlook": "Average",
+      "certifications": [
+        "CompTIA A+",
+        "CompTIA Network+"
+      ],
+      "skills": [
+        "Hardware Repair",
+        "Imaging & Deployment",
+        "Asset Management",
+        "Mobile Device Support"
+      ],
+      "dayInLife": [
+        {
+          "time": "8:00 AM",
+          "icon": "wrench",
+          "title": "Morning Repairs",
+          "text": "Swaps failed drives and repairs laptops queued from the previous day."
+        },
+        {
+          "time": "10:30 AM",
+          "icon": "mobile",
+          "title": "Device Imaging",
+          "text": "Images and configures new laptops and mobile devices for incoming employees."
+        },
+        {
+          "time": "2:00 PM",
+          "icon": "report",
+          "title": "Asset Tracking",
+          "text": "Updates the asset inventory system and schedules routine hardware maintenance."
+        }
+      ]
+    },
+    {
+      "title": "Field Service Technician",
+      "category": "tech-support",
+      "level": "Entry Level",
+      "description": "Travels to client or company sites to install, maintain, and repair technology equipment and infrastructure.",
+      "salaryRange": "$40K - $56K",
+      "growthOutlook": "Average",
+      "certifications": [
+        "CompTIA A+",
+        "CompTIA Network+"
+      ],
+      "skills": [
+        "On-site Installation",
+        "Hardware Maintenance",
+        "Customer Communication",
+        "Time Management"
+      ],
+      "dayInLife": [
+        {
+          "time": "7:30 AM",
+          "icon": "calendar",
+          "title": "Route Planning",
+          "text": "Reviews the day's service tickets and maps out client site visits."
+        },
+        {
+          "time": "10:00 AM",
+          "icon": "wrench",
+          "title": "On-site Installation",
+          "text": "Installs and configures hardware directly at a client's office."
+        },
+        {
+          "time": "3:00 PM",
+          "icon": "headset",
+          "title": "Client Handoff",
+          "text": "Walks the client through the new setup and confirms everything works before leaving."
+        }
+      ]
+    },
+    {
+      "title": "Network Administrator",
+      "category": "networking",
+      "level": "Mid Level",
+      "description": "Manages day-to-day operations of an organization's local and wide area networks, including switches, routers, and firewalls.",
+      "salaryRange": "$58K - $80K",
+      "growthOutlook": "Average",
+      "certifications": [
+        "CompTIA Network+",
+        "CompTIA Security+"
+      ],
+      "skills": [
+        "Routing & Switching",
+        "Network Monitoring",
+        "TCP/IP",
+        "VLANs"
+      ],
+      "dayInLife": [
+        {
+          "time": "8:00 AM",
+          "icon": "gauge",
+          "title": "Network Health Check",
+          "text": "Reviews overnight monitoring alerts and confirms uptime across switches and routers."
+        },
+        {
+          "time": "11:00 AM",
+          "icon": "network",
+          "title": "Configuration Changes",
+          "text": "Applies VLAN and firewall rule changes requested by other IT teams."
+        },
+        {
+          "time": "2:00 PM",
+          "icon": "wrench",
+          "title": "Maintenance Window Prep",
+          "text": "Tests planned firmware updates in a lab environment before the weekend maintenance window."
+        }
+      ]
+    },
+    {
+      "title": "Network Engineer",
+      "category": "networking",
+      "level": "Mid Level",
+      "description": "Designs, implements, and optimizes network infrastructure to support performance, scalability, and reliability requirements.",
+      "salaryRange": "$70K - $100K",
+      "growthOutlook": "Faster than average",
+      "certifications": [
+        "CompTIA Network+",
+        "CompTIA Server+"
+      ],
+      "skills": [
+        "Network Design",
+        "WAN/LAN Architecture",
+        "Load Balancing",
+        "SD-WAN"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:00 AM",
+          "icon": "whiteboard",
+          "title": "Design Review",
+          "text": "Reviews architecture diagrams for an upcoming office network expansion."
+        },
+        {
+          "time": "12:30 PM",
+          "icon": "network",
+          "title": "Implementation",
+          "text": "Configures new routing between the data center and a branch office link."
+        },
+        {
+          "time": "3:30 PM",
+          "icon": "gauge",
+          "title": "Performance Tuning",
+          "text": "Analyzes bandwidth reports and tunes load balancing for peak traffic hours."
+        }
+      ]
+    },
+    {
+      "title": "Systems Administrator",
+      "category": "networking",
+      "level": "Mid Level",
+      "description": "Configures, maintains, and monitors servers and IT systems to ensure uptime, performance, and security across the organization.",
+      "salaryRange": "$62K - $90K",
+      "growthOutlook": "Average",
+      "certifications": [
+        "CompTIA Server+",
+        "CompTIA Security+"
+      ],
+      "skills": [
+        "Server Administration",
+        "Active Directory",
+        "Patch Management",
+        "Virtualization"
+      ],
+      "dayInLife": [
+        {
+          "time": "7:30 AM",
+          "icon": "server",
+          "title": "Server Checks",
+          "text": "Verifies overnight backups completed and reviews server resource usage."
+        },
+        {
+          "time": "10:30 AM",
+          "icon": "lock",
+          "title": "Access Management",
+          "text": "Provisions new user accounts and updates Active Directory group policies."
+        },
+        {
+          "time": "2:30 PM",
+          "icon": "wrench",
+          "title": "Patch Deployment",
+          "text": "Rolls out scheduled OS patches to a batch of production servers."
+        }
+      ]
+    },
+    {
+      "title": "Wireless Network Engineer",
+      "category": "networking",
+      "level": "Mid Level",
+      "description": "Designs and maintains enterprise wireless networks, ensuring coverage, capacity, and security across facilities.",
+      "salaryRange": "$70K - $102K",
+      "growthOutlook": "Faster than average",
+      "certifications": [
+        "CompTIA Network+",
+        "CompTIA Security+"
+      ],
+      "skills": [
+        "Wi-Fi Design",
+        "RF Site Surveys",
+        "Wireless Security",
+        "Network Troubleshooting"
+      ],
+      "dayInLife": [
+        {
+          "time": "8:30 AM",
+          "icon": "network",
+          "title": "Coverage Analysis",
+          "text": "Reviews heat maps from a recent site survey to spot Wi-Fi dead zones."
+        },
+        {
+          "time": "11:30 AM",
+          "icon": "wrench",
+          "title": "Access Point Tuning",
+          "text": "Adjusts channel and power settings on access points to reduce interference."
+        },
+        {
+          "time": "3:00 PM",
+          "icon": "shield",
+          "title": "Wireless Security Audit",
+          "text": "Checks WPA3 configurations and rogue access point alerts across the campus."
+        }
+      ]
+    },
+    {
+      "title": "Network Support Specialist",
+      "category": "networking",
+      "level": "Entry Level",
+      "description": "Provides tier 2 support for network connectivity issues, VPNs, and infrastructure hardware.",
+      "salaryRange": "$50K - $68K",
+      "growthOutlook": "Average",
+      "certifications": [
+        "CompTIA Network+"
+      ],
+      "skills": [
+        "Network Troubleshooting",
+        "VPN Support",
+        "Firewall Basics",
+        "Ticketing"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:00 AM",
+          "icon": "ticket",
+          "title": "VPN Ticket Review",
+          "text": "Triages tickets from remote employees unable to connect to the VPN."
+        },
+        {
+          "time": "12:00 PM",
+          "icon": "network",
+          "title": "Connectivity Troubleshooting",
+          "text": "Traces routing issues between branch offices using diagnostic tools."
+        },
+        {
+          "time": "3:00 PM",
+          "icon": "report",
+          "title": "Shift Handoff Notes",
+          "text": "Documents open issues and hands off context to the next shift."
+        }
+      ]
+    },
+    {
+      "title": "Cybersecurity Analyst",
+      "category": "cybersecurity",
+      "level": "Mid Level",
+      "description": "Monitors networks and systems for security incidents, analyzes threats, and implements defenses to protect organizational data.",
+      "salaryRange": "$75K - $105K",
+      "growthOutlook": "Much faster than average",
+      "certifications": [
+        "CompTIA Security+",
+        "CompTIA CySA+"
+      ],
+      "skills": [
+        "SIEM Tools",
+        "Threat Analysis",
+        "Incident Response",
+        "Vulnerability Management"
+      ],
+      "dayInLife": [
+        {
+          "time": "8:00 AM",
+          "icon": "gauge",
+          "title": "Alert Review",
+          "text": "Scans the SIEM dashboard for anomalies flagged overnight."
+        },
+        {
+          "time": "11:00 AM",
+          "icon": "magnifier",
+          "title": "Threat Investigation",
+          "text": "Digs into a suspicious login pattern to determine if it's a real threat."
+        },
+        {
+          "time": "2:30 PM",
+          "icon": "shield",
+          "title": "Defense Tuning",
+          "text": "Updates detection rules based on the day's findings to catch similar activity faster."
+        }
+      ]
+    },
+    {
+      "title": "SOC Analyst",
+      "category": "cybersecurity",
+      "level": "Entry Level",
+      "description": "Works within a Security Operations Center to triage alerts, investigate anomalies, and escalate confirmed incidents.",
+      "salaryRange": "$60K - $85K",
+      "growthOutlook": "Much faster than average",
+      "certifications": [
+        "CompTIA Security+",
+        "CompTIA CySA+"
+      ],
+      "skills": [
+        "Log Analysis",
+        "Alert Triage",
+        "SIEM",
+        "Incident Documentation"
+      ],
+      "dayInLife": [
+        {
+          "time": "7:00 AM",
+          "icon": "gauge",
+          "title": "Shift Handover",
+          "text": "Reviews the overnight shift's open alerts and priority queue."
+        },
+        {
+          "time": "10:00 AM",
+          "icon": "alert",
+          "title": "Alert Triage",
+          "text": "Works through a stream of security alerts, closing false positives and escalating real ones."
+        },
+        {
+          "time": "2:00 PM",
+          "icon": "report",
+          "title": "Incident Logging",
+          "text": "Documents confirmed incidents with timelines for the response team."
+        }
+      ]
+    },
+    {
+      "title": "Penetration Tester",
+      "category": "cybersecurity",
+      "level": "Senior Level",
+      "description": "Simulates cyberattacks against systems, networks, and applications to identify exploitable vulnerabilities before attackers do.",
+      "salaryRange": "$90K - $135K",
+      "growthOutlook": "Much faster than average",
+      "certifications": [
+        "CompTIA PenTest+",
+        "CompTIA Security+"
+      ],
+      "skills": [
+        "Ethical Hacking",
+        "Exploit Development",
+        "Reporting",
+        "Scripting"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:00 AM",
+          "icon": "magnifier",
+          "title": "Reconnaissance",
+          "text": "Maps out a client's exposed systems and gathers information for the engagement."
+        },
+        {
+          "time": "12:00 PM",
+          "icon": "lock",
+          "title": "Exploitation",
+          "text": "Attempts to exploit identified vulnerabilities in a controlled test environment."
+        },
+        {
+          "time": "3:30 PM",
+          "icon": "report",
+          "title": "Findings Report",
+          "text": "Writes up discovered vulnerabilities with proof-of-concept details and remediation steps."
+        }
+      ]
+    },
+    {
+      "title": "Security Engineer",
+      "category": "cybersecurity",
+      "level": "Senior Level",
+      "description": "Designs and builds secure systems and infrastructure, implementing controls that reduce organizational risk.",
+      "salaryRange": "$95K - $140K",
+      "growthOutlook": "Much faster than average",
+      "certifications": [
+        "CompTIA Security+",
+        "CompTIA CASP+"
+      ],
+      "skills": [
+        "Security Architecture",
+        "Identity & Access Management",
+        "Automation",
+        "Risk Mitigation"
+      ],
+      "dayInLife": [
+        {
+          "time": "8:30 AM",
+          "icon": "whiteboard",
+          "title": "Architecture Review",
+          "text": "Evaluates a proposed system design for security gaps before it goes live."
+        },
+        {
+          "time": "11:30 AM",
+          "icon": "code",
+          "title": "Control Implementation",
+          "text": "Builds automated security controls into the deployment pipeline."
+        },
+        {
+          "time": "3:00 PM",
+          "icon": "shield",
+          "title": "Risk Mitigation",
+          "text": "Works with engineering teams to close out findings from a recent audit."
+        }
+      ]
+    },
+    {
+      "title": "Incident Responder",
+      "category": "cybersecurity",
+      "level": "Senior Level",
+      "description": "Leads the investigation and containment of active security breaches, coordinating remediation and post-incident review.",
+      "salaryRange": "$85K - $125K",
+      "growthOutlook": "Much faster than average",
+      "certifications": [
+        "CompTIA CySA+",
+        "CompTIA Security+"
+      ],
+      "skills": [
+        "Digital Forensics",
+        "Malware Analysis",
+        "Containment",
+        "Root Cause Analysis"
+      ],
+      "dayInLife": [
+        {
+          "time": "8:00 AM",
+          "icon": "alert",
+          "title": "Active Investigation",
+          "text": "Jumps into an ongoing incident to contain a compromised endpoint."
+        },
+        {
+          "time": "11:00 AM",
+          "icon": "magnifier",
+          "title": "Forensic Analysis",
+          "text": "Examines logs and memory captures to trace how the attacker got in."
+        },
+        {
+          "time": "3:00 PM",
+          "icon": "report",
+          "title": "Post-Incident Review",
+          "text": "Documents the timeline and root cause for the post-mortem report."
+        }
+      ]
+    },
+    {
+      "title": "Vulnerability Analyst",
+      "category": "cybersecurity",
+      "level": "Mid Level",
+      "description": "Identifies, prioritizes, and tracks remediation of security vulnerabilities across an organization's technology stack.",
+      "salaryRange": "$72K - $100K",
+      "growthOutlook": "Much faster than average",
+      "certifications": [
+        "CompTIA CySA+",
+        "CompTIA Security+"
+      ],
+      "skills": [
+        "Vulnerability Scanning",
+        "Risk Scoring",
+        "Patch Coordination",
+        "Reporting"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:00 AM",
+          "icon": "gauge",
+          "title": "Scan Review",
+          "text": "Reviews results from the week's automated vulnerability scans."
+        },
+        {
+          "time": "12:00 PM",
+          "icon": "chart",
+          "title": "Risk Prioritization",
+          "text": "Scores vulnerabilities by severity and business impact to build the remediation queue."
+        },
+        {
+          "time": "2:30 PM",
+          "icon": "report",
+          "title": "Patch Coordination",
+          "text": "Works with system owners to schedule fixes for the highest-risk findings."
+        }
+      ]
+    },
+    {
+      "title": "Information Security Analyst",
+      "category": "cybersecurity",
+      "level": "Mid Level",
+      "description": "Develops and enforces security policies, conducts risk assessments, and ensures regulatory compliance.",
+      "salaryRange": "$78K - $110K",
+      "growthOutlook": "Much faster than average",
+      "certifications": [
+        "CompTIA Security+",
+        "CompTIA CASP+"
+      ],
+      "skills": [
+        "Risk Assessment",
+        "Compliance",
+        "Security Policy",
+        "Auditing"
+      ],
+      "dayInLife": [
+        {
+          "time": "8:30 AM",
+          "icon": "report",
+          "title": "Policy Review",
+          "text": "Updates security policy documentation to reflect a new compliance requirement."
+        },
+        {
+          "time": "11:30 AM",
+          "icon": "magnifier",
+          "title": "Risk Assessment",
+          "text": "Assesses a new vendor's security posture before contract approval."
+        },
+        {
+          "time": "2:30 PM",
+          "icon": "shield",
+          "title": "Audit Prep",
+          "text": "Gathers evidence and documentation ahead of an upcoming compliance audit."
+        }
+      ]
+    },
+    {
+      "title": "Cloud Security Specialist",
+      "category": "cybersecurity",
+      "level": "Senior Level",
+      "description": "Secures cloud environments and workloads, implementing controls across identity, network, and data protection layers.",
+      "salaryRange": "$95K - $138K",
+      "growthOutlook": "Much faster than average",
+      "certifications": [
+        "CompTIA Security+",
+        "CompTIA Cloud+"
+      ],
+      "skills": [
+        "Cloud IAM",
+        "Container Security",
+        "Compliance Automation",
+        "Encryption"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:00 AM",
+          "icon": "cloud",
+          "title": "Configuration Review",
+          "text": "Audits cloud storage buckets and IAM roles for overly broad permissions."
+        },
+        {
+          "time": "12:00 PM",
+          "icon": "lock",
+          "title": "Access Hardening",
+          "text": "Tightens identity policies and rotates credentials flagged as overly permissive."
+        },
+        {
+          "time": "3:00 PM",
+          "icon": "shield",
+          "title": "Compliance Reporting",
+          "text": "Prepares evidence showing cloud controls meet the organization's security baseline."
+        }
+      ]
+    },
+    {
+      "title": "Cloud Administrator",
+      "category": "cloud",
+      "level": "Mid Level",
+      "description": "Manages day-to-day operations of cloud infrastructure, including provisioning, monitoring, and cost optimization.",
+      "salaryRange": "$68K - $95K",
+      "growthOutlook": "Much faster than average",
+      "certifications": [
+        "CompTIA Cloud+",
+        "CompTIA Server+"
+      ],
+      "skills": [
+        "Cloud Provisioning",
+        "Cost Management",
+        "Monitoring",
+        "Automation Scripts"
+      ],
+      "dayInLife": [
+        {
+          "time": "8:00 AM",
+          "icon": "gauge",
+          "title": "Cost & Usage Review",
+          "text": "Checks overnight cloud spend and resource utilization dashboards."
+        },
+        {
+          "time": "11:00 AM",
+          "icon": "cloud",
+          "title": "Provisioning",
+          "text": "Spins up new virtual machines and storage for a project team's request."
+        },
+        {
+          "time": "2:30 PM",
+          "icon": "wrench",
+          "title": "Maintenance Tasks",
+          "text": "Applies patches and adjusts auto-scaling rules for a production workload."
+        }
+      ]
+    },
+    {
+      "title": "Cloud Engineer",
+      "category": "cloud",
+      "level": "Mid Level",
+      "description": "Builds and maintains scalable cloud infrastructure and deployment pipelines using infrastructure-as-code practices.",
+      "salaryRange": "$85K - $120K",
+      "growthOutlook": "Much faster than average",
+      "certifications": [
+        "CompTIA Cloud+",
+        "CompTIA Linux+"
+      ],
+      "skills": [
+        "Infrastructure as Code",
+        "CI/CD",
+        "Containers",
+        "Cloud Networking"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:00 AM",
+          "icon": "code",
+          "title": "Infrastructure as Code",
+          "text": "Writes and reviews Terraform changes for a new environment."
+        },
+        {
+          "time": "12:00 PM",
+          "icon": "rocket",
+          "title": "Pipeline Deployment",
+          "text": "Deploys updated infrastructure through the CI/CD pipeline and verifies it."
+        },
+        {
+          "time": "3:00 PM",
+          "icon": "network",
+          "title": "Networking Setup",
+          "text": "Configures VPC peering between two cloud environments."
+        }
+      ]
+    },
+    {
+      "title": "Cloud Architect",
+      "category": "cloud",
+      "level": "Senior Level",
+      "description": "Designs enterprise cloud strategies and architectures, balancing scalability, security, and cost across cloud platforms.",
+      "salaryRange": "$110K - $160K",
+      "growthOutlook": "Much faster than average",
+      "certifications": [
+        "CompTIA Cloud+",
+        "CompTIA CASP+"
+      ],
+      "skills": [
+        "Cloud Strategy",
+        "Multi-cloud Architecture",
+        "Migration Planning",
+        "Governance"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:30 AM",
+          "icon": "whiteboard",
+          "title": "Strategy Session",
+          "text": "Meets with stakeholders to plan a multi-cloud migration roadmap."
+        },
+        {
+          "time": "12:30 PM",
+          "icon": "cloud",
+          "title": "Architecture Design",
+          "text": "Designs the target-state architecture for a new customer-facing platform."
+        },
+        {
+          "time": "3:30 PM",
+          "icon": "chart",
+          "title": "Cost Modeling",
+          "text": "Builds a cost comparison across cloud providers for the proposed design."
+        }
+      ]
+    },
+    {
+      "title": "Site Reliability Engineer",
+      "category": "cloud",
+      "level": "Senior Level",
+      "description": "Ensures the reliability, scalability, and performance of production systems through automation and observability.",
+      "salaryRange": "$100K - $150K",
+      "growthOutlook": "Much faster than average",
+      "certifications": [
+        "CompTIA Cloud+",
+        "CompTIA Linux+"
+      ],
+      "skills": [
+        "Observability",
+        "Automation",
+        "Incident Management",
+        "Capacity Planning"
+      ],
+      "dayInLife": [
+        {
+          "time": "8:00 AM",
+          "icon": "gauge",
+          "title": "Dashboard Review",
+          "text": "Checks service-level objectives and overnight error budgets."
+        },
+        {
+          "time": "11:00 AM",
+          "icon": "alert",
+          "title": "Incident Response",
+          "text": "Responds to a latency spike, tracing it to a misconfigured cache layer."
+        },
+        {
+          "time": "2:30 PM",
+          "icon": "code",
+          "title": "Automation Work",
+          "text": "Writes automation to prevent the same failure from recurring."
+        }
+      ]
+    },
+    {
+      "title": "DevOps Engineer",
+      "category": "cloud",
+      "level": "Mid Level",
+      "description": "Bridges development and operations teams, automating build, test, and deployment pipelines for faster, reliable releases.",
+      "salaryRange": "$90K - $130K",
+      "growthOutlook": "Much faster than average",
+      "certifications": [
+        "CompTIA Cloud+",
+        "CompTIA Linux+"
+      ],
+      "skills": [
+        "CI/CD Pipelines",
+        "Containerization",
+        "Configuration Management",
+        "Scripting"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:00 AM",
+          "icon": "code",
+          "title": "Pipeline Maintenance",
+          "text": "Reviews failed builds and fixes a broken CI pipeline step."
+        },
+        {
+          "time": "12:00 PM",
+          "icon": "rocket",
+          "title": "Release Deployment",
+          "text": "Coordinates a production release using automated deployment scripts."
+        },
+        {
+          "time": "3:00 PM",
+          "icon": "gauge",
+          "title": "Monitoring Setup",
+          "text": "Adds new metrics and alerts for a service that just went live."
+        }
+      ]
+    },
+    {
+      "title": "Data Analyst",
+      "category": "data-ai",
+      "level": "Mid Level",
+      "description": "Collects, cleans, and analyzes data to uncover trends and support business decision-making through reports and dashboards.",
+      "salaryRange": "$60K - $88K",
+      "growthOutlook": "Much faster than average",
+      "certifications": [
+        "CompTIA Data+"
+      ],
+      "skills": [
+        "SQL",
+        "Data Visualization",
+        "Statistics",
+        "Reporting Tools"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:00 AM",
+          "icon": "database",
+          "title": "Data Pull",
+          "text": "Queries the data warehouse to pull metrics for a stakeholder request."
+        },
+        {
+          "time": "11:30 AM",
+          "icon": "chart",
+          "title": "Analysis",
+          "text": "Cleans the dataset and builds visualizations to spot trends."
+        },
+        {
+          "time": "2:00 PM",
+          "icon": "report",
+          "title": "Stakeholder Readout",
+          "text": "Presents findings and recommendations to the marketing team."
+        }
+      ]
+    },
+    {
+      "title": "Data Scientist",
+      "category": "data-ai",
+      "level": "Senior Level",
+      "description": "Builds statistical models and machine learning solutions to extract insights and predictions from complex datasets.",
+      "salaryRange": "$100K - $150K",
+      "growthOutlook": "Much faster than average",
+      "certifications": [
+        "CompTIA Data+"
+      ],
+      "skills": [
+        "Machine Learning",
+        "Python/R",
+        "Statistical Modeling",
+        "Data Pipelines"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:00 AM",
+          "icon": "database",
+          "title": "Data Exploration",
+          "text": "Explores a new dataset to understand its structure and quality."
+        },
+        {
+          "time": "12:00 PM",
+          "icon": "code",
+          "title": "Model Development",
+          "text": "Builds and trains a predictive model to test a hypothesis."
+        },
+        {
+          "time": "3:00 PM",
+          "icon": "chart",
+          "title": "Results Validation",
+          "text": "Validates model accuracy and shares early results with the product team."
+        }
+      ]
+    },
+    {
+      "title": "Business Intelligence Analyst",
+      "category": "data-ai",
+      "level": "Mid Level",
+      "description": "Transforms raw data into actionable business insights using dashboards, KPIs, and reporting frameworks.",
+      "salaryRange": "$65K - $95K",
+      "growthOutlook": "Faster than average",
+      "certifications": [
+        "CompTIA Data+"
+      ],
+      "skills": [
+        "BI Tools",
+        "Data Modeling",
+        "SQL",
+        "Dashboarding"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:00 AM",
+          "icon": "chart",
+          "title": "Dashboard Updates",
+          "text": "Refreshes KPI dashboards used by leadership for the weekly review."
+        },
+        {
+          "time": "11:30 AM",
+          "icon": "database",
+          "title": "Data Modeling",
+          "text": "Builds a new data model to support an upcoming sales report."
+        },
+        {
+          "time": "2:00 PM",
+          "icon": "report",
+          "title": "Requirements Gathering",
+          "text": "Meets with a department lead to scope a new reporting request."
+        }
+      ]
+    },
+    {
+      "title": "Database Administrator",
+      "category": "data-ai",
+      "level": "Mid Level",
+      "description": "Manages database performance, security, backups, and availability for mission-critical applications.",
+      "salaryRange": "$75K - $110K",
+      "growthOutlook": "Average",
+      "certifications": [
+        "CompTIA Data+",
+        "CompTIA Server+"
+      ],
+      "skills": [
+        "Database Tuning",
+        "Backup & Recovery",
+        "SQL",
+        "Security Hardening"
+      ],
+      "dayInLife": [
+        {
+          "time": "8:00 AM",
+          "icon": "server",
+          "title": "Health Checks",
+          "text": "Reviews database performance metrics and overnight backup logs."
+        },
+        {
+          "time": "11:00 AM",
+          "icon": "gauge",
+          "title": "Query Tuning",
+          "text": "Optimizes a slow-running query flagged by the application team."
+        },
+        {
+          "time": "2:30 PM",
+          "icon": "lock",
+          "title": "Security Hardening",
+          "text": "Audits database user permissions and rotates service account credentials."
+        }
+      ]
+    },
+    {
+      "title": "AI/Machine Learning Engineer",
+      "category": "data-ai",
+      "level": "Senior Level",
+      "description": "Designs, trains, and deploys machine learning models into production systems and applications.",
+      "salaryRange": "$105K - $160K",
+      "growthOutlook": "Much faster than average",
+      "certifications": [
+        "CompTIA Data+"
+      ],
+      "skills": [
+        "Model Training",
+        "MLOps",
+        "Python",
+        "Deep Learning Frameworks"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:00 AM",
+          "icon": "code",
+          "title": "Model Training",
+          "text": "Kicks off a training run with an updated dataset and monitors progress."
+        },
+        {
+          "time": "12:00 PM",
+          "icon": "gauge",
+          "title": "Evaluation",
+          "text": "Evaluates model performance against benchmark metrics."
+        },
+        {
+          "time": "3:00 PM",
+          "icon": "rocket",
+          "title": "Deployment",
+          "text": "Packages the model and deploys it to a production inference endpoint."
+        }
+      ]
+    },
+    {
+      "title": "Software Developer",
+      "category": "software-dev",
+      "level": "Mid Level",
+      "description": "Designs, builds, and tests applications and software systems to meet user and business requirements.",
+      "salaryRange": "$70K - $115K",
+      "growthOutlook": "Much faster than average",
+      "certifications": [
+        "CompTIA ITF+",
+        "CompTIA Security+"
+      ],
+      "skills": [
+        "Programming Languages",
+        "Version Control",
+        "Debugging",
+        "API Design"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:00 AM",
+          "icon": "people",
+          "title": "Stand-up & Planning",
+          "text": "Joins the daily stand-up, then starts work on an assigned feature."
+        },
+        {
+          "time": "12:00 PM",
+          "icon": "code",
+          "title": "Code Review",
+          "text": "Reviews a teammate's pull request and addresses feedback on their own."
+        },
+        {
+          "time": "3:00 PM",
+          "icon": "report",
+          "title": "Testing & Debugging",
+          "text": "Writes unit tests and debugs an issue found during QA."
+        }
+      ]
+    },
+    {
+      "title": "QA/Test Engineer",
+      "category": "software-dev",
+      "level": "Mid Level",
+      "description": "Develops and executes test plans to identify defects and ensure software quality before release.",
+      "salaryRange": "$60K - $92K",
+      "growthOutlook": "Faster than average",
+      "certifications": [
+        "CompTIA ITF+"
+      ],
+      "skills": [
+        "Test Automation",
+        "Bug Tracking",
+        "Regression Testing",
+        "Scripting"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:00 AM",
+          "icon": "report",
+          "title": "Test Planning",
+          "text": "Writes test cases for a feature scheduled to ship this sprint."
+        },
+        {
+          "time": "11:30 AM",
+          "icon": "magnifier",
+          "title": "Test Execution",
+          "text": "Runs manual and automated tests, logging any bugs found."
+        },
+        {
+          "time": "2:30 PM",
+          "icon": "ticket",
+          "title": "Bug Triage",
+          "text": "Meets with developers to prioritize and verify bug fixes."
+        }
+      ]
+    },
+    {
+      "title": "Web Developer",
+      "category": "software-dev",
+      "level": "Entry Level",
+      "description": "Builds and maintains websites and web applications, focusing on front-end, back-end, or full-stack development.",
+      "salaryRange": "$52K - $85K",
+      "growthOutlook": "Faster than average",
+      "certifications": [
+        "CompTIA ITF+"
+      ],
+      "skills": [
+        "HTML/CSS/JavaScript",
+        "Responsive Design",
+        "APIs",
+        "Version Control"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:00 AM",
+          "icon": "code",
+          "title": "Feature Build",
+          "text": "Builds out a new page layout from design mockups."
+        },
+        {
+          "time": "12:00 PM",
+          "icon": "wrench",
+          "title": "Cross-browser Fixes",
+          "text": "Fixes a styling issue that only appears in one browser."
+        },
+        {
+          "time": "3:00 PM",
+          "icon": "rocket",
+          "title": "Deployment",
+          "text": "Pushes the update live and verifies it on the production site."
+        }
+      ]
+    },
+    {
+      "title": "IT Project Manager",
+      "category": "project-management",
+      "level": "Senior Level",
+      "description": "Plans, executes, and closes technology projects, managing scope, budget, timelines, and stakeholder communication.",
+      "salaryRange": "$85K - $125K",
+      "growthOutlook": "Faster than average",
+      "certifications": [
+        "CompTIA Project+"
+      ],
+      "skills": [
+        "Project Planning",
+        "Budgeting",
+        "Risk Management",
+        "Stakeholder Communication"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:00 AM",
+          "icon": "calendar",
+          "title": "Status Check-in",
+          "text": "Reviews project timelines and flags any tasks at risk of slipping."
+        },
+        {
+          "time": "11:30 AM",
+          "icon": "people",
+          "title": "Stakeholder Meeting",
+          "text": "Updates stakeholders on progress and resolves a scope question."
+        },
+        {
+          "time": "2:30 PM",
+          "icon": "report",
+          "title": "Budget Tracking",
+          "text": "Updates the budget tracker and adjusts resourcing for next sprint."
+        }
+      ]
+    },
+    {
+      "title": "Scrum Master",
+      "category": "project-management",
+      "level": "Mid Level",
+      "description": "Facilitates agile development teams, removing blockers and ensuring adherence to Scrum practices and sprint goals.",
+      "salaryRange": "$75K - $110K",
+      "growthOutlook": "Faster than average",
+      "certifications": [
+        "CompTIA Project+"
+      ],
+      "skills": [
+        "Agile/Scrum",
+        "Facilitation",
+        "Sprint Planning",
+        "Team Coaching"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:00 AM",
+          "icon": "people",
+          "title": "Daily Stand-up",
+          "text": "Facilitates the team's stand-up, noting blockers to follow up on."
+        },
+        {
+          "time": "11:00 AM",
+          "icon": "wrench",
+          "title": "Blocker Removal",
+          "text": "Works with another team to unblock a dependency holding up a story."
+        },
+        {
+          "time": "2:00 PM",
+          "icon": "calendar",
+          "title": "Sprint Planning Prep",
+          "text": "Preps the backlog and agenda for the next sprint planning session."
+        }
+      ]
+    },
+    {
+      "title": "Business Analyst",
+      "category": "project-management",
+      "level": "Mid Level",
+      "description": "Gathers and analyzes business requirements, bridging the gap between stakeholders and technical teams.",
+      "salaryRange": "$65K - $98K",
+      "growthOutlook": "Faster than average",
+      "certifications": [
+        "CompTIA Project+"
+      ],
+      "skills": [
+        "Requirements Gathering",
+        "Process Mapping",
+        "Documentation",
+        "Stakeholder Management"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:00 AM",
+          "icon": "people",
+          "title": "Stakeholder Interview",
+          "text": "Interviews a department lead to capture requirements for a new tool."
+        },
+        {
+          "time": "11:30 AM",
+          "icon": "report",
+          "title": "Documentation",
+          "text": "Writes up user stories and acceptance criteria from the discussion."
+        },
+        {
+          "time": "2:30 PM",
+          "icon": "whiteboard",
+          "title": "Process Mapping",
+          "text": "Maps the current workflow to identify where the new tool fits in."
+        }
+      ]
+    },
+    {
+      "title": "IT Coordinator",
+      "category": "project-management",
+      "level": "Entry Level",
+      "description": "Supports IT project teams with scheduling, documentation, procurement tracking, and administrative coordination.",
+      "salaryRange": "$45K - $65K",
+      "growthOutlook": "Average",
+      "certifications": [
+        "CompTIA Project+",
+        "CompTIA ITF+"
+      ],
+      "skills": [
+        "Scheduling",
+        "Documentation",
+        "Vendor Coordination",
+        "Reporting"
+      ],
+      "dayInLife": [
+        {
+          "time": "9:00 AM",
+          "icon": "calendar",
+          "title": "Schedule Coordination",
+          "text": "Coordinates meeting times and resources for an upcoming project kickoff."
+        },
+        {
+          "time": "11:30 AM",
+          "icon": "report",
+          "title": "Documentation",
+          "text": "Updates project trackers and files vendor purchase orders."
+        },
+        {
+          "time": "2:30 PM",
+          "icon": "people",
+          "title": "Vendor Follow-up",
+          "text": "Follows up with a vendor on a delayed equipment shipment."
+        }
+      ]
+    }
+  ]
+}
