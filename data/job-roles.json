@@ -1,0 +1,354 @@
+{
+  "categories": [
+    { "id": "all", "name": "All Categories" },
+    { "id": "cybersecurity", "name": "Cybersecurity" },
+    { "id": "networking", "name": "Networking" },
+    { "id": "cloud", "name": "Cloud" },
+    { "id": "data-ai", "name": "Data & AI" },
+    { "id": "tech-support", "name": "Technical Support" },
+    { "id": "software-dev", "name": "Software Development" },
+    { "id": "project-management", "name": "Project Management" }
+  ],
+  "roles": [
+    {
+      "title": "Help Desk Technician",
+      "category": "tech-support",
+      "level": "Entry Level",
+      "description": "First point of contact for troubleshooting hardware, software, and connectivity issues for end users, often by phone, chat, or ticketing system.",
+      "salaryRange": "$38K - $52K",
+      "growthOutlook": "Faster than average",
+      "certifications": ["CompTIA A+", "CompTIA ITF+"],
+      "skills": ["Troubleshooting", "Customer Service", "Ticketing Systems", "Windows/macOS Support"]
+    },
+    {
+      "title": "Technical Support Specialist",
+      "category": "tech-support",
+      "level": "Entry Level",
+      "description": "Provides advanced remote and in-person support for hardware, software, and network issues, escalating complex problems as needed.",
+      "salaryRange": "$42K - $58K",
+      "growthOutlook": "Faster than average",
+      "certifications": ["CompTIA A+", "CompTIA Network+"],
+      "skills": ["Remote Support", "Diagnostics", "Documentation", "Escalation Management"]
+    },
+    {
+      "title": "Desktop Support Analyst",
+      "category": "tech-support",
+      "level": "Entry Level",
+      "description": "Maintains and repairs desktop computers, peripherals, and mobile devices for an organization's workforce.",
+      "salaryRange": "$44K - $60K",
+      "growthOutlook": "Average",
+      "certifications": ["CompTIA A+", "CompTIA Network+"],
+      "skills": ["Hardware Repair", "Imaging & Deployment", "Asset Management", "Mobile Device Support"]
+    },
+    {
+      "title": "Field Service Technician",
+      "category": "tech-support",
+      "level": "Entry Level",
+      "description": "Travels to client or company sites to install, maintain, and repair technology equipment and infrastructure.",
+      "salaryRange": "$40K - $56K",
+      "growthOutlook": "Average",
+      "certifications": ["CompTIA A+", "CompTIA Network+"],
+      "skills": ["On-site Installation", "Hardware Maintenance", "Customer Communication", "Time Management"]
+    },
+    {
+      "title": "Network Administrator",
+      "category": "networking",
+      "level": "Mid Level",
+      "description": "Manages day-to-day operations of an organization's local and wide area networks, including switches, routers, and firewalls.",
+      "salaryRange": "$58K - $80K",
+      "growthOutlook": "Average",
+      "certifications": ["CompTIA Network+", "CompTIA Security+"],
+      "skills": ["Routing & Switching", "Network Monitoring", "TCP/IP", "VLANs"]
+    },
+    {
+      "title": "Network Engineer",
+      "category": "networking",
+      "level": "Mid Level",
+      "description": "Designs, implements, and optimizes network infrastructure to support performance, scalability, and reliability requirements.",
+      "salaryRange": "$70K - $100K",
+      "growthOutlook": "Faster than average",
+      "certifications": ["CompTIA Network+", "CompTIA Server+"],
+      "skills": ["Network Design", "WAN/LAN Architecture", "Load Balancing", "SD-WAN"]
+    },
+    {
+      "title": "Systems Administrator",
+      "category": "networking",
+      "level": "Mid Level",
+      "description": "Configures, maintains, and monitors servers and IT systems to ensure uptime, performance, and security across the organization.",
+      "salaryRange": "$62K - $90K",
+      "growthOutlook": "Average",
+      "certifications": ["CompTIA Server+", "CompTIA Security+"],
+      "skills": ["Server Administration", "Active Directory", "Patch Management", "Virtualization"]
+    },
+    {
+      "title": "Wireless Network Engineer",
+      "category": "networking",
+      "level": "Mid Level",
+      "description": "Designs and maintains enterprise wireless networks, ensuring coverage, capacity, and security across facilities.",
+      "salaryRange": "$70K - $102K",
+      "growthOutlook": "Faster than average",
+      "certifications": ["CompTIA Network+", "CompTIA Security+"],
+      "skills": ["Wi-Fi Design", "RF Site Surveys", "Wireless Security", "Network Troubleshooting"]
+    },
+    {
+      "title": "Network Support Specialist",
+      "category": "networking",
+      "level": "Entry Level",
+      "description": "Provides tier 2 support for network connectivity issues, VPNs, and infrastructure hardware.",
+      "salaryRange": "$50K - $68K",
+      "growthOutlook": "Average",
+      "certifications": ["CompTIA Network+"],
+      "skills": ["Network Troubleshooting", "VPN Support", "Firewall Basics", "Ticketing"]
+    },
+    {
+      "title": "Cybersecurity Analyst",
+      "category": "cybersecurity",
+      "level": "Mid Level",
+      "description": "Monitors networks and systems for security incidents, analyzes threats, and implements defenses to protect organizational data.",
+      "salaryRange": "$75K - $105K",
+      "growthOutlook": "Much faster than average",
+      "certifications": ["CompTIA Security+", "CompTIA CySA+"],
+      "skills": ["SIEM Tools", "Threat Analysis", "Incident Response", "Vulnerability Management"]
+    },
+    {
+      "title": "SOC Analyst",
+      "category": "cybersecurity",
+      "level": "Entry Level",
+      "description": "Works within a Security Operations Center to triage alerts, investigate anomalies, and escalate confirmed incidents.",
+      "salaryRange": "$60K - $85K",
+      "growthOutlook": "Much faster than average",
+      "certifications": ["CompTIA Security+", "CompTIA CySA+"],
+      "skills": ["Log Analysis", "Alert Triage", "SIEM", "Incident Documentation"]
+    },
+    {
+      "title": "Penetration Tester",
+      "category": "cybersecurity",
+      "level": "Senior Level",
+      "description": "Simulates cyberattacks against systems, networks, and applications to identify exploitable vulnerabilities before attackers do.",
+      "salaryRange": "$90K - $135K",
+      "growthOutlook": "Much faster than average",
+      "certifications": ["CompTIA PenTest+", "CompTIA Security+"],
+      "skills": ["Ethical Hacking", "Exploit Development", "Reporting", "Scripting"]
+    },
+    {
+      "title": "Security Engineer",
+      "category": "cybersecurity",
+      "level": "Senior Level",
+      "description": "Designs and builds secure systems and infrastructure, implementing controls that reduce organizational risk.",
+      "salaryRange": "$95K - $140K",
+      "growthOutlook": "Much faster than average",
+      "certifications": ["CompTIA Security+", "CompTIA CASP+"],
+      "skills": ["Security Architecture", "Identity & Access Management", "Automation", "Risk Mitigation"]
+    },
+    {
+      "title": "Incident Responder",
+      "category": "cybersecurity",
+      "level": "Senior Level",
+      "description": "Leads the investigation and containment of active security breaches, coordinating remediation and post-incident review.",
+      "salaryRange": "$85K - $125K",
+      "growthOutlook": "Much faster than average",
+      "certifications": ["CompTIA CySA+", "CompTIA Security+"],
+      "skills": ["Digital Forensics", "Malware Analysis", "Containment", "Root Cause Analysis"]
+    },
+    {
+      "title": "Vulnerability Analyst",
+      "category": "cybersecurity",
+      "level": "Mid Level",
+      "description": "Identifies, prioritizes, and tracks remediation of security vulnerabilities across an organization's technology stack.",
+      "salaryRange": "$72K - $100K",
+      "growthOutlook": "Much faster than average",
+      "certifications": ["CompTIA CySA+", "CompTIA Security+"],
+      "skills": ["Vulnerability Scanning", "Risk Scoring", "Patch Coordination", "Reporting"]
+    },
+    {
+      "title": "Information Security Analyst",
+      "category": "cybersecurity",
+      "level": "Mid Level",
+      "description": "Develops and enforces security policies, conducts risk assessments, and ensures regulatory compliance.",
+      "salaryRange": "$78K - $110K",
+      "growthOutlook": "Much faster than average",
+      "certifications": ["CompTIA Security+", "CompTIA CASP+"],
+      "skills": ["Risk Assessment", "Compliance", "Security Policy", "Auditing"]
+    },
+    {
+      "title": "Cloud Security Specialist",
+      "category": "cybersecurity",
+      "level": "Senior Level",
+      "description": "Secures cloud environments and workloads, implementing controls across identity, network, and data protection layers.",
+      "salaryRange": "$95K - $138K",
+      "growthOutlook": "Much faster than average",
+      "certifications": ["CompTIA Security+", "CompTIA Cloud+"],
+      "skills": ["Cloud IAM", "Container Security", "Compliance Automation", "Encryption"]
+    },
+    {
+      "title": "Cloud Administrator",
+      "category": "cloud",
+      "level": "Mid Level",
+      "description": "Manages day-to-day operations of cloud infrastructure, including provisioning, monitoring, and cost optimization.",
+      "salaryRange": "$68K - $95K",
+      "growthOutlook": "Much faster than average",
+      "certifications": ["CompTIA Cloud+", "CompTIA Server+"],
+      "skills": ["Cloud Provisioning", "Cost Management", "Monitoring", "Automation Scripts"]
+    },
+    {
+      "title": "Cloud Engineer",
+      "category": "cloud",
+      "level": "Mid Level",
+      "description": "Builds and maintains scalable cloud infrastructure and deployment pipelines using infrastructure-as-code practices.",
+      "salaryRange": "$85K - $120K",
+      "growthOutlook": "Much faster than average",
+      "certifications": ["CompTIA Cloud+", "CompTIA Linux+"],
+      "skills": ["Infrastructure as Code", "CI/CD", "Containers", "Cloud Networking"]
+    },
+    {
+      "title": "Cloud Architect",
+      "category": "cloud",
+      "level": "Senior Level",
+      "description": "Designs enterprise cloud strategies and architectures, balancing scalability, security, and cost across cloud platforms.",
+      "salaryRange": "$110K - $160K",
+      "growthOutlook": "Much faster than average",
+      "certifications": ["CompTIA Cloud+", "CompTIA CASP+"],
+      "skills": ["Cloud Strategy", "Multi-cloud Architecture", "Migration Planning", "Governance"]
+    },
+    {
+      "title": "Site Reliability Engineer",
+      "category": "cloud",
+      "level": "Senior Level",
+      "description": "Ensures the reliability, scalability, and performance of production systems through automation and observability.",
+      "salaryRange": "$100K - $150K",
+      "growthOutlook": "Much faster than average",
+      "certifications": ["CompTIA Cloud+", "CompTIA Linux+"],
+      "skills": ["Observability", "Automation", "Incident Management", "Capacity Planning"]
+    },
+    {
+      "title": "DevOps Engineer",
+      "category": "cloud",
+      "level": "Mid Level",
+      "description": "Bridges development and operations teams, automating build, test, and deployment pipelines for faster, reliable releases.",
+      "salaryRange": "$90K - $130K",
+      "growthOutlook": "Much faster than average",
+      "certifications": ["CompTIA Cloud+", "CompTIA Linux+"],
+      "skills": ["CI/CD Pipelines", "Containerization", "Configuration Management", "Scripting"]
+    },
+    {
+      "title": "Data Analyst",
+      "category": "data-ai",
+      "level": "Mid Level",
+      "description": "Collects, cleans, and analyzes data to uncover trends and support business decision-making through reports and dashboards.",
+      "salaryRange": "$60K - $88K",
+      "growthOutlook": "Much faster than average",
+      "certifications": ["CompTIA Data+"],
+      "skills": ["SQL", "Data Visualization", "Statistics", "Reporting Tools"]
+    },
+    {
+      "title": "Data Scientist",
+      "category": "data-ai",
+      "level": "Senior Level",
+      "description": "Builds statistical models and machine learning solutions to extract insights and predictions from complex datasets.",
+      "salaryRange": "$100K - $150K",
+      "growthOutlook": "Much faster than average",
+      "certifications": ["CompTIA Data+"],
+      "skills": ["Machine Learning", "Python/R", "Statistical Modeling", "Data Pipelines"]
+    },
+    {
+      "title": "Business Intelligence Analyst",
+      "category": "data-ai",
+      "level": "Mid Level",
+      "description": "Transforms raw data into actionable business insights using dashboards, KPIs, and reporting frameworks.",
+      "salaryRange": "$65K - $95K",
+      "growthOutlook": "Faster than average",
+      "certifications": ["CompTIA Data+"],
+      "skills": ["BI Tools", "Data Modeling", "SQL", "Dashboarding"]
+    },
+    {
+      "title": "Database Administrator",
+      "category": "data-ai",
+      "level": "Mid Level",
+      "description": "Manages database performance, security, backups, and availability for mission-critical applications.",
+      "salaryRange": "$75K - $110K",
+      "growthOutlook": "Average",
+      "certifications": ["CompTIA Data+", "CompTIA Server+"],
+      "skills": ["Database Tuning", "Backup & Recovery", "SQL", "Security Hardening"]
+    },
+    {
+      "title": "AI/Machine Learning Engineer",
+      "category": "data-ai",
+      "level": "Senior Level",
+      "description": "Designs, trains, and deploys machine learning models into production systems and applications.",
+      "salaryRange": "$105K - $160K",
+      "growthOutlook": "Much faster than average",
+      "certifications": ["CompTIA Data+"],
+      "skills": ["Model Training", "MLOps", "Python", "Deep Learning Frameworks"]
+    },
+    {
+      "title": "Software Developer",
+      "category": "software-dev",
+      "level": "Mid Level",
+      "description": "Designs, builds, and tests applications and software systems to meet user and business requirements.",
+      "salaryRange": "$70K - $115K",
+      "growthOutlook": "Much faster than average",
+      "certifications": ["CompTIA ITF+", "CompTIA Security+"],
+      "skills": ["Programming Languages", "Version Control", "Debugging", "API Design"]
+    },
+    {
+      "title": "QA/Test Engineer",
+      "category": "software-dev",
+      "level": "Mid Level",
+      "description": "Develops and executes test plans to identify defects and ensure software quality before release.",
+      "salaryRange": "$60K - $92K",
+      "growthOutlook": "Faster than average",
+      "certifications": ["CompTIA ITF+"],
+      "skills": ["Test Automation", "Bug Tracking", "Regression Testing", "Scripting"]
+    },
+    {
+      "title": "Web Developer",
+      "category": "software-dev",
+      "level": "Entry Level",
+      "description": "Builds and maintains websites and web applications, focusing on front-end, back-end, or full-stack development.",
+      "salaryRange": "$52K - $85K",
+      "growthOutlook": "Faster than average",
+      "certifications": ["CompTIA ITF+"],
+      "skills": ["HTML/CSS/JavaScript", "Responsive Design", "APIs", "Version Control"]
+    },
+    {
+      "title": "IT Project Manager",
+      "category": "project-management",
+      "level": "Senior Level",
+      "description": "Plans, executes, and closes technology projects, managing scope, budget, timelines, and stakeholder communication.",
+      "salaryRange": "$85K - $125K",
+      "growthOutlook": "Faster than average",
+      "certifications": ["CompTIA Project+"],
+      "skills": ["Project Planning", "Budgeting", "Risk Management", "Stakeholder Communication"]
+    },
+    {
+      "title": "Scrum Master",
+      "category": "project-management",
+      "level": "Mid Level",
+      "description": "Facilitates agile development teams, removing blockers and ensuring adherence to Scrum practices and sprint goals.",
+      "salaryRange": "$75K - $110K",
+      "growthOutlook": "Faster than average",
+      "certifications": ["CompTIA Project+"],
+      "skills": ["Agile/Scrum", "Facilitation", "Sprint Planning", "Team Coaching"]
+    },
+    {
+      "title": "Business Analyst",
+      "category": "project-management",
+      "level": "Mid Level",
+      "description": "Gathers and analyzes business requirements, bridging the gap between stakeholders and technical teams.",
+      "salaryRange": "$65K - $98K",
+      "growthOutlook": "Faster than average",
+      "certifications": ["CompTIA Project+"],
+      "skills": ["Requirements Gathering", "Process Mapping", "Documentation", "Stakeholder Management"]
+    },
+    {
+      "title": "IT Coordinator",
+      "category": "project-management",
+      "level": "Entry Level",
+      "description": "Supports IT project teams with scheduling, documentation, procurement tracking, and administrative coordination.",
+      "salaryRange": "$45K - $65K",
+      "growthOutlook": "Average",
+      "certifications": ["CompTIA Project+", "CompTIA ITF+"],
+      "skills": ["Scheduling", "Documentation", "Vendor Coordination", "Reporting"]
+    }
+  ]
+}
