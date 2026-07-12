@@ -183,6 +183,129 @@ body {
   color: var(--text);
 }
 
+.major-overview {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.25rem 1.4rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.major-overview[hidden] { display: none; }
+
+.major-overview-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.major-overview-title {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.major-duration {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.major-overview-grid {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) minmax(280px, 1.4fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .major-overview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.major-list {
+  list-style: none;
+  margin: 0.4rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.major-list li {
+  font-size: 0.86rem;
+  color: var(--text);
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.major-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.cost-table-wrap {
+  overflow-x: auto;
+}
+
+.cost-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.cost-table th,
+.cost-table td {
+  padding: 0.5rem 0.6rem;
+  text-align: right;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.cost-table th:first-child,
+.cost-table td:first-child {
+  text-align: left;
+}
+
+.cost-table thead th {
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+}
+
+.cost-table tr.year-subtotal td {
+  color: var(--text-muted);
+  font-style: italic;
+  border-bottom: 1px solid var(--border);
+}
+
+.cost-table tr.program-total td {
+  border-top: 2px solid var(--accent);
+  border-bottom: none;
+  font-weight: 700;
+  color: var(--text);
+  padding-top: 0.65rem;
+}
+
 .result-count {
   color: var(--text-muted);
   font-size: 0.85rem;

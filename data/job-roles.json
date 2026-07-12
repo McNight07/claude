@@ -9,6 +9,97 @@
     { "id": "software-dev", "name": "Software Development" },
     { "id": "project-management", "name": "Project Management" }
   ],
+  "majorDetails": {
+    "cybersecurity": {
+      "duration": "18 months",
+      "semestersPerYear": 2,
+      "courses": [
+        "Security Fundamentals",
+        "Threat Detection & Incident Response",
+        "Penetration Testing & Ethical Hacking",
+        "Governance, Risk & Compliance",
+        "Advanced Security Architecture"
+      ],
+      "certifications": ["CompTIA Security+", "CompTIA CySA+", "CompTIA PenTest+", "CompTIA CASP+"],
+      "semesterCosts": [2400, 2600, 2300]
+    },
+    "networking": {
+      "duration": "12 months",
+      "semestersPerYear": 2,
+      "courses": [
+        "Networking Fundamentals",
+        "Routing & Switching",
+        "Wireless Network Design",
+        "Server Administration",
+        "Network Security Basics"
+      ],
+      "certifications": ["CompTIA Network+", "CompTIA Server+", "CompTIA Security+"],
+      "semesterCosts": [2100, 2300]
+    },
+    "cloud": {
+      "duration": "12 months",
+      "semestersPerYear": 2,
+      "courses": [
+        "Cloud Infrastructure Fundamentals",
+        "Virtualization & Containers",
+        "Cloud Deployment & Automation",
+        "Cloud Security & Compliance"
+      ],
+      "certifications": ["CompTIA Cloud+", "CompTIA Linux+"],
+      "semesterCosts": [2200, 2350]
+    },
+    "data-ai": {
+      "duration": "12 months",
+      "semestersPerYear": 2,
+      "courses": [
+        "Data Analysis Fundamentals",
+        "Statistics for Data Science",
+        "Databases & SQL",
+        "Data Visualization & Reporting",
+        "Machine Learning Foundations"
+      ],
+      "certifications": ["CompTIA Data+"],
+      "semesterCosts": [2150, 2250]
+    },
+    "tech-support": {
+      "duration": "6 months",
+      "semestersPerYear": 2,
+      "courses": [
+        "IT Fundamentals",
+        "PC & Mobile Device Hardware",
+        "Operating Systems Support",
+        "Troubleshooting Methodology",
+        "Customer Service for IT Support"
+      ],
+      "certifications": ["CompTIA ITF+", "CompTIA A+"],
+      "semesterCosts": [1850, 1750]
+    },
+    "software-dev": {
+      "duration": "12 months",
+      "semestersPerYear": 2,
+      "courses": [
+        "Programming Fundamentals",
+        "Web Development Basics",
+        "Software Testing & QA",
+        "Version Control & Collaboration",
+        "API Design & Integration"
+      ],
+      "certifications": ["CompTIA ITF+", "CompTIA Security+"],
+      "semesterCosts": [2000, 2100]
+    },
+    "project-management": {
+      "duration": "9 months",
+      "semestersPerYear": 2,
+      "courses": [
+        "Project Management Fundamentals",
+        "Agile & Scrum Practices",
+        "Business Analysis Essentials",
+        "Risk & Budget Management"
+      ],
+      "certifications": ["CompTIA Project+"],
+      "semesterCosts": [1900, 1800]
+    }
+  },
   "roles": [
     {
       "title": "Help Desk Technician",

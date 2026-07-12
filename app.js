@@ -1,6 +1,7 @@
 const state = {
   roles: [],
   categories: [],
+  majorDetails: {},
   activeCategory: "all",
   activeLevel: "all",
   sortBy: "title",
@@ -12,6 +13,7 @@ const els = {
   tabs: document.getElementById("category-tabs"),
   level: document.getElementById("level-filter"),
   sort: document.getElementById("sort-select"),
+  majorOverview: document.getElementById("major-overview"),
   results: document.getElementById("results"),
   count: document.getElementById("result-count"),
   noResults: document.getElementById("no-results"),
@@ -26,6 +28,7 @@ async function init() {
   const data = await res.json();
   state.roles = data.roles;
   state.categories = data.categories;
+  state.majorDetails = data.majorDetails || {};
 
   renderTabs();
   bindEvents();
@@ -109,6 +112,8 @@ function levelBadgeClass(level) {
 }
 
 function render() {
+  renderMajorOverview();
+
   const filtered = getFiltered();
   els.results.innerHTML = "";
   els.count.textContent = `${filtered.length} job role${filtered.length === 1 ? "" : "s"} found`;
@@ -131,6 +136,72 @@ function render() {
     card.addEventListener("click", () => openModal(role));
     els.results.appendChild(card);
   });
+}
+
+function renderMajorOverview() {
+  const details = state.majorDetails[state.activeCategory];
+  if (!details) {
+    els.majorOverview.hidden = true;
+    els.majorOverview.innerHTML = "";
+    return;
+  }
+
+  let programTotal = 0;
+  let yearTotal = 0;
+  let yearNum = 1;
+  const rows = [];
+
+  details.semesterCosts.forEach((cost, idx) => {
+    const semesterNum = idx + 1;
+    rows.push(`<tr><td>Semester ${semesterNum}</td><td>${formatCurrency(cost)}</td></tr>`);
+    programTotal += cost;
+    yearTotal += cost;
+
+    const isYearEnd = semesterNum % details.semestersPerYear === 0;
+    const isLastSemester = semesterNum === details.semesterCosts.length;
+    if (isYearEnd || isLastSemester) {
+      rows.push(
+        `<tr class="year-subtotal"><td>Year ${yearNum} annual subtotal</td><td>${formatCurrency(yearTotal)}</td></tr>`
+      );
+      yearNum += 1;
+      yearTotal = 0;
+    }
+  });
+
+  rows.push(`<tr class="program-total"><td>Program total</td><td>${formatCurrency(programTotal)}</td></tr>`);
+
+  els.majorOverview.innerHTML = `
+    <div class="major-overview-header">
+      <h2 class="major-overview-title">${escapeHtml(categoryName(state.activeCategory))} Pathway</h2>
+      <span class="major-duration">Duration: ${escapeHtml(details.duration)}</span>
+    </div>
+    <div class="major-overview-grid">
+      <div>
+        <div class="section-label">Required Certifications</div>
+        <ul class="major-list">
+          ${details.certifications.map((c) => `<li>${escapeHtml(c)}</li>`).join("")}
+        </ul>
+        <div class="section-label">Required Courses</div>
+        <ul class="major-list">
+          ${details.courses.map((c) => `<li>${escapeHtml(c)}</li>`).join("")}
+        </ul>
+      </div>
+      <div>
+        <div class="section-label">Estimated Tuition</div>
+        <div class="cost-table-wrap">
+          <table class="cost-table">
+            <thead><tr><th>Term</th><th>Cost</th></tr></thead>
+            <tbody>${rows.join("")}</tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  `;
+  els.majorOverview.hidden = false;
+}
+
+function formatCurrency(amount) {
+  return `$${amount.toLocaleString("en-US")}`;
 }
 
 function openModal(role) {
