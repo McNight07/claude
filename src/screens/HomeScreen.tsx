@@ -127,6 +127,7 @@ export function HomeScreen() {
           onPressAvatar={() => navigation.navigate('Tabs', { screen: 'Profile' })}
           onPressNotifications={() => {}}
           onPressSearch={() => navigation.navigate('Tabs', { screen: 'Explore' })}
+          onPressNews={() => navigation.navigate('News')}
         />
 
         <SearchBar onSubmit={(query) => navigation.navigate('Tabs', { screen: 'Explore', params: { query } })} />

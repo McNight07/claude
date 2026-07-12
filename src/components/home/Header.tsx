@@ -10,6 +10,7 @@ interface HeaderProps {
   onPressAvatar?: () => void;
   onPressNotifications?: () => void;
   onPressSearch?: () => void;
+  onPressNews?: () => void;
 }
 
 export function Header({
@@ -18,6 +19,7 @@ export function Header({
   onPressAvatar,
   onPressNotifications,
   onPressSearch,
+  onPressNews,
 }: HeaderProps) {
   const theme = useTheme();
   return (
@@ -36,6 +38,14 @@ export function Header({
       </View>
 
       <View style={styles.icons}>
+        <TouchableOpacity
+          testID="news-button"
+          onPress={onPressNews}
+          hitSlop={8}
+          style={[styles.iconButton, { backgroundColor: theme.cardAlt, borderColor: theme.border }]}
+        >
+          <Feather name="rss" size={18} color={theme.text} />
+        </TouchableOpacity>
         <TouchableOpacity
           onPress={onPressSearch}
           hitSlop={8}
