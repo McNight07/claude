@@ -3,7 +3,7 @@ import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Card } from '../Card';
 import { Pill } from '../Pill';
 import { useTheme } from '../../theme/ThemeProvider';
-import { NewsItem } from '../../types';
+import { NewsItem } from '../../data/news';
 
 const categoryColor: Record<NewsItem['category'], keyof ReturnType<typeof useTheme>> = {
   AI: 'purple',

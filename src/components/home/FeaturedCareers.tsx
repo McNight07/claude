@@ -1,5 +1,6 @@
+import Feather from '@expo/vector-icons/Feather';
 import React from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Card } from '../Card';
 import { DifficultyPill, Pill } from '../Pill';
 import { GradientButton } from '../GradientButton';
@@ -21,10 +22,14 @@ const demandColor = (demand: Career['demand'], theme: ReturnType<typeof useTheme
 
 export function FeaturedCareers({
   careers,
+  isFavorite,
+  onToggleFavorite,
   onLearnMore,
 }: {
   careers: Career[];
-  onLearnMore?: (career: Career) => void;
+  isFavorite: (careerId: string) => boolean;
+  onToggleFavorite: (careerId: string) => void;
+  onLearnMore: (career: Career) => void;
 }) {
   const theme = useTheme();
   return (
@@ -35,11 +40,18 @@ export function FeaturedCareers({
     >
       {careers.map((career) => (
         <Card key={career.id} style={styles.card}>
-          <Text style={styles.icon}>{career.icon}</Text>
+          <View style={styles.topRow}>
+            <Text style={styles.icon}>{career.icon}</Text>
+            <TouchableOpacity onPress={() => onToggleFavorite(career.id)} hitSlop={8}>
+              <Feather name="heart" size={17} color={isFavorite(career.id) ? theme.danger : theme.textFaint} />
+            </TouchableOpacity>
+          </View>
           <Text style={[styles.title, { color: theme.text }]} numberOfLines={2}>
             {career.title}
           </Text>
-          <Text style={[styles.salary, { color: theme.blue }]}>{career.avgSalary}/yr</Text>
+          <Text style={[styles.salary, { color: theme.blue }]}>
+            ${Math.round(career.salary.average / 1000)}k/yr
+          </Text>
           <View style={styles.pillRow}>
             <Pill label={`${career.demand} demand`} color={demandColor(career.demand, theme)} />
           </View>
@@ -48,7 +60,7 @@ export function FeaturedCareers({
             label="Learn More"
             small
             style={styles.button}
-            onPress={() => onLearnMore?.(career)}
+            onPress={() => onLearnMore(career)}
           />
         </Card>
       ))}
@@ -64,6 +76,11 @@ const styles = StyleSheet.create({
   card: {
     width: 168,
     gap: 8,
+  },
+  topRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
   },
   icon: {
     fontSize: 28,

@@ -4,14 +4,19 @@ import { Card } from '../Card';
 import { GradientButton } from '../GradientButton';
 import { ProgressBar } from '../ProgressBar';
 import { useTheme } from '../../theme/ThemeProvider';
-import { LearningItem } from '../../types';
+import { Certification } from '../../types';
+
+interface ContinueLearningItem {
+  certification: Certification;
+  progress: number;
+}
 
 export function ContinueLearning({
   items,
   onContinue,
 }: {
-  items: LearningItem[];
-  onContinue?: (item: LearningItem) => void;
+  items: ContinueLearningItem[];
+  onContinue: (certification: Certification) => void;
 }) {
   const theme = useTheme();
   return (
@@ -20,23 +25,23 @@ export function ContinueLearning({
       showsHorizontalScrollIndicator={false}
       contentContainerStyle={styles.scroll}
     >
-      {items.map((item) => (
-        <Card key={item.id} style={styles.card}>
-          <Text style={[styles.provider, { color: theme.textMuted }]}>{item.provider}</Text>
-          <Text style={[styles.title, { color: theme.text }]}>{item.title}</Text>
+      {items.map(({ certification, progress }) => (
+        <Card key={certification.id} style={styles.card}>
+          <Text style={[styles.provider, { color: theme.textMuted }]}>{certification.vendor}</Text>
+          <Text style={[styles.title, { color: theme.text }]}>{certification.name}</Text>
           <View style={styles.progressRow}>
             <View style={styles.progressTrack}>
-              <ProgressBar progress={item.progress} />
+              <ProgressBar progress={progress} />
             </View>
             <Text style={[styles.progressText, { color: theme.teal }]}>
-              {Math.round(item.progress * 100)}%
+              {Math.round(progress * 100)}%
             </Text>
           </View>
           <GradientButton
             label="Continue"
             small
             style={styles.button}
-            onPress={() => onContinue?.(item)}
+            onPress={() => onContinue(certification)}
           />
         </Card>
       ))}

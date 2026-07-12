@@ -1,17 +1,27 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Card } from '../Card';
 import { ProgressRing } from '../ProgressRing';
 import { useTheme } from '../../theme/ThemeProvider';
 
-export function DailyGoal({ goal, progress }: { goal: string; progress: number }) {
+export function DailyGoal({
+  goal,
+  progress,
+  onLogStudy,
+}: {
+  goal: string;
+  progress: number;
+  onLogStudy: () => void;
+}) {
   const theme = useTheme();
   return (
     <Card style={styles.card}>
       <View style={styles.info}>
         <Text style={[styles.label, { color: theme.textMuted }]}>TODAY&apos;S GOAL</Text>
         <Text style={[styles.goal, { color: theme.text }]}>{goal}</Text>
-        <Text style={[styles.hint, { color: theme.textFaint }]}>Keep your streak going!</Text>
+        <TouchableOpacity onPress={onLogStudy} hitSlop={6}>
+          <Text style={[styles.hint, { color: theme.blue }]}>+ Log 15 min</Text>
+        </TouchableOpacity>
       </View>
       <ProgressRing progress={progress} />
     </Card>
@@ -39,6 +49,8 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   hint: {
-    fontSize: 12,
+    fontSize: 12.5,
+    fontWeight: '700',
+    marginTop: 2,
   },
 });

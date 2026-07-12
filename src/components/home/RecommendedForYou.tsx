@@ -4,34 +4,36 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Card } from '../Card';
 import { DifficultyPill } from '../Pill';
 import { useTheme } from '../../theme/ThemeProvider';
-import { Recommendation } from '../../types';
+import { Certification } from '../../types';
 
 export function RecommendedForYou({
   items,
   onStart,
 }: {
-  items: Recommendation[];
-  onStart?: (item: Recommendation) => void;
+  items: Certification[];
+  onStart: (certification: Certification) => void;
 }) {
   const theme = useTheme();
   return (
     <View style={styles.list}>
-      {items.map((item) => (
-        <Card key={item.id} style={styles.card}>
-          <Text style={styles.icon}>{item.icon}</Text>
+      {items.map((certification) => (
+        <Card key={certification.id} style={styles.card}>
+          <Text style={styles.icon}>📘</Text>
           <View style={styles.info}>
-            <Text style={[styles.title, { color: theme.text }]}>{item.title}</Text>
+            <Text style={[styles.title, { color: theme.text }]}>{certification.name}</Text>
             <View style={styles.metaRow}>
               <View style={styles.metaItem}>
                 <Feather name="clock" size={12} color={theme.textFaint} />
-                <Text style={[styles.metaText, { color: theme.textMuted }]}>{item.estimatedTime}</Text>
+                <Text style={[styles.metaText, { color: theme.textMuted }]}>
+                  {certification.durationWeeks}w
+                </Text>
               </View>
-              <DifficultyPill level={item.difficulty} />
+              <DifficultyPill level={certification.difficulty} />
             </View>
           </View>
           <TouchableOpacity
             style={[styles.startButton, { backgroundColor: theme.blue + '18' }]}
-            onPress={() => onStart?.(item)}
+            onPress={() => onStart(certification)}
           >
             <Text style={[styles.startText, { color: theme.blue }]}>Start</Text>
           </TouchableOpacity>

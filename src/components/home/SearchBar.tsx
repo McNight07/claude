@@ -1,14 +1,20 @@
 import Feather from '@expo/vector-icons/Feather';
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, TextInput, View } from 'react-native';
 import { useTheme } from '../../theme/ThemeProvider';
 
-export function SearchBar() {
+export function SearchBar({ onSubmit }: { onSubmit: (query: string) => void }) {
   const theme = useTheme();
+  const [value, setValue] = useState('');
+
   return (
     <View style={[styles.wrap, { backgroundColor: theme.card, borderColor: theme.border }]}>
       <Feather name="search" size={18} color={theme.textFaint} />
       <TextInput
+        value={value}
+        onChangeText={setValue}
+        onSubmitEditing={() => onSubmit(value)}
+        returnKeyType="search"
         placeholder="Search careers, certifications, or skills..."
         placeholderTextColor={theme.textFaint}
         style={[styles.input, { color: theme.text }]}

@@ -1,0 +1,76 @@
+import { RoadmapPath } from '../types';
+
+export const roadmaps: RoadmapPath[] = [
+  {
+    id: 'rm-cybersecurity',
+    title: 'Cybersecurity Analyst Path',
+    description: 'Go from IT basics to defending real networks as a SOC analyst.',
+    careerId: 'sec-analyst',
+    level: 'Intermediate',
+    steps: [
+      { id: 'rm-cs-1', label: 'IT Fundamentals', description: 'Operating systems, hardware, and troubleshooting basics.', type: 'topic', estimatedWeeks: 2, resources: [] },
+      { id: 'rm-cs-2', label: 'Networking Fundamentals', description: 'TCP/IP, DNS, routing, and how data actually moves.', type: 'topic', estimatedWeeks: 3, resources: [] },
+      { id: 'rm-cs-3', label: 'Linux+', description: 'Get comfortable administering Linux from the command line.', type: 'certification', certificationId: 'linuxplus', estimatedWeeks: 6, resources: [] },
+      { id: 'rm-cs-4', label: 'Security+', description: 'The industry baseline for security concepts and controls.', type: 'certification', certificationId: 'secplus', estimatedWeeks: 6, resources: [] },
+      { id: 'rm-cs-5', label: 'Python for Security', description: 'Automate log parsing and simple detection scripts.', type: 'topic', estimatedWeeks: 4, resources: [] },
+      { id: 'rm-cs-6', label: 'Certified Ethical Hacker', description: 'Learn to think and probe like an attacker.', type: 'certification', certificationId: 'ceh', estimatedWeeks: 10, resources: [] },
+      { id: 'rm-cs-7', label: 'SOC Analyst Capstone', description: 'Run a home SIEM lab and document a full incident response.', type: 'project', estimatedWeeks: 3, resources: [] },
+    ],
+  },
+  {
+    id: 'rm-cloud',
+    title: 'Cloud Engineer Path',
+    description: 'Build the skills to design and operate production cloud infrastructure.',
+    careerId: 'cloud-eng',
+    level: 'Advanced',
+    steps: [
+      { id: 'rm-cl-1', label: 'Networking & Linux Basics', description: 'The foundation every cloud platform builds on.', type: 'topic', estimatedWeeks: 3, resources: [] },
+      { id: 'rm-cl-2', label: 'AWS Cloud Practitioner', description: 'Core cloud concepts, billing, and the AWS service map.', type: 'certification', certificationId: 'aws-ccp', estimatedWeeks: 4, resources: [] },
+      { id: 'rm-cl-3', label: 'Scripting & Automation', description: 'Bash and Python for provisioning and glue code.', type: 'topic', estimatedWeeks: 3, resources: [] },
+      { id: 'rm-cl-4', label: 'AWS Solutions Architect Associate', description: 'Design resilient, cost-aware architectures.', type: 'certification', certificationId: 'aws-saa', estimatedWeeks: 10, resources: [] },
+      { id: 'rm-cl-5', label: 'Infrastructure-as-Code Project', description: 'Stand up a full environment with Terraform and CI/CD.', type: 'project', estimatedWeeks: 3, resources: [] },
+    ],
+  },
+  {
+    id: 'rm-swdev',
+    title: 'Software Developer Path',
+    description: 'From your first line of code to a job-ready portfolio.',
+    careerId: 'sw-dev',
+    level: 'Beginner',
+    steps: [
+      { id: 'rm-sd-1', label: 'Programming Fundamentals', description: 'Variables, control flow, functions — in JavaScript.', type: 'topic', estimatedWeeks: 4, resources: [] },
+      { id: 'rm-sd-2', label: 'Git & Version Control', description: 'Branches, commits, pull requests, and code review.', type: 'topic', estimatedWeeks: 1, resources: [] },
+      { id: 'rm-sd-3', label: 'Web Fundamentals', description: 'HTML, CSS, and building real interfaces.', type: 'topic', estimatedWeeks: 4, resources: [] },
+      { id: 'rm-sd-4', label: 'Portfolio Project', description: 'Ship a full-stack app end to end.', type: 'project', estimatedWeeks: 4, resources: [] },
+      { id: 'rm-sd-5', label: 'Data Structures & Algorithms', description: 'The fundamentals interviewers actually test.', type: 'topic', estimatedWeeks: 5, resources: [] },
+      { id: 'rm-sd-6', label: 'Job-Ready Capstone', description: 'A polished project plus a resume and GitHub ready to share.', type: 'project', estimatedWeeks: 3, resources: [] },
+    ],
+  },
+  {
+    id: 'rm-network',
+    title: 'Network Engineer Path',
+    description: 'Learn to build and run the networks everything else depends on.',
+    careerId: 'net-eng',
+    level: 'Intermediate',
+    steps: [
+      { id: 'rm-ne-1', label: 'CompTIA A+', description: 'Hardware, OS, and troubleshooting fundamentals.', type: 'certification', certificationId: 'aplus', estimatedWeeks: 6, resources: [] },
+      { id: 'rm-ne-2', label: 'Networking Fundamentals', description: 'Subnetting, protocols, and network topologies.', type: 'topic', estimatedWeeks: 3, resources: [] },
+      { id: 'rm-ne-3', label: 'CompTIA Network+', description: 'Vendor-neutral networking certification.', type: 'certification', certificationId: 'netplus', estimatedWeeks: 5, resources: [] },
+      { id: 'rm-ne-4', label: 'Cisco CCNA', description: 'Routing, switching, and network automation on Cisco gear.', type: 'certification', certificationId: 'ccna', estimatedWeeks: 8, resources: [] },
+      { id: 'rm-ne-5', label: 'Home Lab Project', description: 'Design and document a multi-VLAN network from scratch.', type: 'project', estimatedWeeks: 2, resources: [] },
+    ],
+  },
+  {
+    id: 'rm-data',
+    title: 'Data Analyst Path',
+    description: 'Learn to turn spreadsheets and databases into decisions.',
+    careerId: 'data-analyst',
+    level: 'Beginner',
+    steps: [
+      { id: 'rm-da-1', label: 'Spreadsheets & SQL', description: 'The two tools every analyst uses daily.', type: 'topic', estimatedWeeks: 3, resources: [] },
+      { id: 'rm-da-2', label: 'Google Data Analytics Certificate', description: 'A structured path through the full analysis process.', type: 'certification', certificationId: 'google-data', estimatedWeeks: 6, resources: [] },
+      { id: 'rm-da-3', label: 'Data Visualization', description: 'Tell a clear story with dashboards, not just charts.', type: 'topic', estimatedWeeks: 3, resources: [] },
+      { id: 'rm-da-4', label: 'Analytics Capstone', description: 'Analyze a real dataset end to end and present findings.', type: 'project', estimatedWeeks: 3, resources: [] },
+    ],
+  },
+];

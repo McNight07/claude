@@ -1,75 +1,38 @@
-import Feather from '@expo/vector-icons/Feather';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Card } from '../Card';
 import { GradientButton } from '../GradientButton';
+import { ProgressBar } from '../ProgressBar';
 import { useTheme } from '../../theme/ThemeProvider';
-import { RoadmapStage } from '../../types';
+import { RoadmapPath } from '../../types';
 
 export function LearningRoadmap({
-  stages,
+  roadmap,
+  completedSteps,
   onViewRoadmap,
 }: {
-  stages: RoadmapStage[];
-  onViewRoadmap?: () => void;
+  roadmap: RoadmapPath;
+  completedSteps: number;
+  onViewRoadmap: () => void;
 }) {
   const theme = useTheme();
+  const progress = completedSteps / roadmap.steps.length;
+
   return (
     <Card style={styles.card}>
-      <View style={styles.stages}>
-        {stages.map((stage, index) => {
-          const color =
-            stage.status === 'done'
-              ? theme.teal
-              : stage.status === 'active'
-              ? theme.blue
-              : theme.border;
-          return (
-            <React.Fragment key={stage.id}>
-              <View style={styles.stageItem}>
-                <View
-                  style={[
-                    styles.node,
-                    {
-                      backgroundColor: stage.status === 'upcoming' ? theme.cardAlt : color,
-                      borderColor: color,
-                    },
-                  ]}
-                >
-                  {stage.status === 'done' ? (
-                    <Feather name="check" size={14} color="#FFFFFF" />
-                  ) : (
-                    <Text
-                      style={[
-                        styles.nodeText,
-                        { color: stage.status === 'active' ? '#FFFFFF' : theme.textFaint },
-                      ]}
-                    >
-                      {index + 1}
-                    </Text>
-                  )}
-                </View>
-                <Text
-                  style={[
-                    styles.stageLabel,
-                    { color: stage.status === 'upcoming' ? theme.textFaint : theme.text },
-                  ]}
-                >
-                  {stage.label}
-                </Text>
-              </View>
-              {index < stages.length - 1 ? (
-                <View
-                  style={[
-                    styles.connector,
-                    { backgroundColor: stage.status === 'done' ? theme.teal : theme.border },
-                  ]}
-                />
-              ) : null}
-            </React.Fragment>
-          );
-        })}
+      <Text style={[styles.title, { color: theme.text }]}>{roadmap.title}</Text>
+      <Text style={[styles.description, { color: theme.textMuted }]} numberOfLines={2}>
+        {roadmap.description}
+      </Text>
+      <View style={styles.progressRow}>
+        <View style={styles.progressTrack}>
+          <ProgressBar progress={progress} />
+        </View>
+        <Text style={[styles.progressText, { color: theme.teal }]}>{Math.round(progress * 100)}%</Text>
       </View>
+      <Text style={[styles.stepsText, { color: theme.textFaint }]}>
+        {completedSteps} of {roadmap.steps.length} steps complete
+      </Text>
       <GradientButton label="View My Roadmap" onPress={onViewRoadmap} style={styles.button} />
     </Card>
   );
@@ -77,39 +40,30 @@ export function LearningRoadmap({
 
 const styles = StyleSheet.create({
   card: {
-    gap: 16,
+    gap: 12,
   },
-  stages: {
+  title: {
+    fontSize: 17,
+    fontWeight: '700',
+  },
+  description: {
+    fontSize: 13,
+    lineHeight: 18,
+  },
+  progressRow: {
     flexDirection: 'row',
-    alignItems: 'flex-start',
-  },
-  stageItem: {
     alignItems: 'center',
-    width: 64,
+    gap: 10,
   },
-  node: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 2,
+  progressTrack: {
+    flex: 1,
   },
-  nodeText: {
+  progressText: {
     fontSize: 13,
     fontWeight: '700',
   },
-  stageLabel: {
-    fontSize: 11,
-    fontWeight: '600',
-    marginTop: 6,
-    textAlign: 'center',
-  },
-  connector: {
-    height: 2,
-    flex: 1,
-    marginTop: 15,
-    marginHorizontal: -4,
+  stepsText: {
+    fontSize: 12,
   },
   button: {
     marginTop: 0,
